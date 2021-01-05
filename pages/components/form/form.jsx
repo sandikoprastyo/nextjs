@@ -4,10 +4,14 @@ const Form = (props) => {
   return (
     <>
       <form onSubmit={props.getWeather} className={styles.form}>
+        <label for='city' className={styles.city}>
+          city
+        </label>
         <input
           className={styles.input}
           type='text'
           name='city'
+          id='city'
           placeholder='Enter City'
           required
         />
