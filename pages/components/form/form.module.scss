@@ -1,27 +1,36 @@
-$buttonColor : rgb(59, 85, 97);
+$buttonColor : rgb(216, 126, 41);
 $text : #fff;
 
 
 .form{
     margin-top: 30px;
-    margin-bottom: 50px;
     display: flex;
 }
 
 
 .input {
-    padding:10px;
+  position: relative;
+    padding:15px;
     border-radius: 20px;
     border: none;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button{
+  position: absolute;
+  left: 60%;
   font-weight: bold;
-  padding: 10px;
+  padding:15px;
   flex-direction: column;
   border-radius: 20px;
+  border: none;
   color: $text;
   background-color:$buttonColor;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .city {

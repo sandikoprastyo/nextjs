@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__weather{
+    display: flex;
+    h1{
+        padding: 10px;    }   
+}
+    
+.body__weather{
+    font-size: 18px;
+    font: bold;
+}
+
+.temp{
+    font-size: 3rem;
+}
+
+.main{
+    font-size: 2rem;
+}

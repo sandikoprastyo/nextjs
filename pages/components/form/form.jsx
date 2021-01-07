@@ -1,4 +1,6 @@
 import styles from './form.module.scss';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Form = (props) => {
   return (
@@ -15,8 +17,9 @@ const Form = (props) => {
           placeholder='Enter City'
           required
         />
+
         <button className={styles.button} type='submit'>
-          submit
+          <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
     </>

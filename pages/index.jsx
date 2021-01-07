@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.scss';
-import Footer from './components/footer';
+//import Footer from './components/footer';
 import Header from './components/header';
 import styless from './index.module.scss';
 import { connect } from 'react-redux';
@@ -35,7 +35,7 @@ const App = (props) => {
         country: json.sys.country,
         description: json.weather[0].description,
         main: json.weather[0].main,
-        temp: Math.round((json.main.temp * 9) / 5 -459.67),
+        temp: Math.round((json.main.temp * 9) / 5 - 459.67),
       });
     } catch (err) {
       alert(err);
@@ -60,8 +60,6 @@ const App = (props) => {
           <button onClick={props.decrementCounter}>Decrement</button> */}
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
